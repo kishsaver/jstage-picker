@@ -1,0 +1,19 @@
+[project]
+name = "jstage-picker"
+version = "0.1.0"
+description = "J-STAGE から読み物として面白そうな論文を拾い、抄録をHTMLで開く"
+readme = "README.md"
+authors = [
+    { name = "tyurome", email = "me@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "black>=26.5.1",
+]
+
+[project.scripts]
+jstage-picker = "jstage_picker:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
